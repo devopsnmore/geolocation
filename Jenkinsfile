@@ -15,16 +15,12 @@ stages {
     sh 'mvn package'
   }
 }
-    stage('test')' {
+    stage('test') {
             steps {
                 sh 'mvn test'
             }
         }
-        stage('test') {
-            steps {
-                echo 'test'
-            }
-        }
+        
         stage('deploy') {
             steps {
                 echo 'deploy'
